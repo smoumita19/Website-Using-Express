@@ -1,0 +1,17 @@
+extends header
+
+block content
+  form(method='post', action='contact/send')
+   h1 Contact 
+    
+    .form-group
+     <br>
+     h5 Name
+     input.form-control(type='text', name='name', placeholder='Name')
+    .form-group
+     h5 Email
+     input.form-control(type='email', name='email',placeholder='Email')
+    .form-group
+     h5 Message
+     textarea.form-control(type='message', placeholder='Message')
+    button.btn.btn-primary(type='submit') Submit
